@@ -43,7 +43,7 @@ function parseJsonResponse(json){
   // we are using forEach loop. you can also use for loop
   breedsList.forEach(function(breed){
     //we use template literals to generate the html for our single list item
-    var listItemHtml = `<li> ${breed} </li>`;
+    var listItemHtml = `<li>${breed}</li>`;
     // += is used to keep adding more list items in the list without removing the already available items in the list
     ul_breeds.innerHTML+=  listItemHtml;
   })
@@ -51,6 +51,18 @@ function parseJsonResponse(json){
 
 //call the getDogBreeds function whenever page loads
 getDogBreeds();
+
+
+
+
+
+
+
+
+
+
+
+//////////////////code for part 3 starts here//////////////////////////////////
 
 const img_container = document.getElementById("img_container");
 
